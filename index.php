@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>insertar datos con ajax</title>
+	<title>Regístro de usuarios</title>
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<link rel="stylesheet" href="sweetalert2.min.css">
 	
@@ -17,6 +17,8 @@
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
 	  <form id="frmajax" method="POST">
+	  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
 	 
 		<label>Nombre</label>
 		<p></p>
@@ -34,7 +36,7 @@
 		<p></p>
 		<input type="password" name="password" id="password" class="form-control">
 		<p></p>
-		<button id="btnguardar" class="btn btn-primary">Guardar datos</button>
+		<button id="btnguardar" class="btn btn-primary">Guardar datos</button><br>
 		<br>
 		<a name="" id="" class="btn btn-primary" href="iniciar.php" role="button">Inicio</a>
 	</form>

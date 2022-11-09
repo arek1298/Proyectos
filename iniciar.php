@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>insertar datos con ajax</title>
+	<title>Inicio sesión</title>
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<link rel="stylesheet" href="sweetalert2.min.css">
 	<link rel="stylesheet" href="estilos.css">
@@ -14,7 +14,7 @@
 	<br>
 	<div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">Inicie sesión</h1>
+    <h1 class="display-4">Hola, Bienvenido a nuestra tienda</h1>
 	<form  method="post" class="form">
 <label>Usuario</label>
 		<p></p>
