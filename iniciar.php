@@ -25,6 +25,8 @@
 		<input type="password" name="password" id="password" class="form-control">
         <button type="submit" name="iniciar" class="btn btn-success">Iniciar Sesión</button></center>
         <a href="index.php">Regístrate</a>
+
+		<a href="index.php">Home</a>
         <br>
         </form>
     

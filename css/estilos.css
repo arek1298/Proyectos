@@ -1,0 +1,148 @@
+*{
+    background-color: rgba(112, 112, 230, 0.87);
+}
+
+
+.nav{
+    display: inline-block;
+    background:blue;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+
+}
+.nav:hover{
+    background: rosybrown;
+}
+nav{
+    background: black;
+    padding: 10px;
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 200px auto;
+    box-shadow: 5px 8px 12px black;
+
+
+}
+.container img{
+    width: 600px;
+    height: 400px;
+}
+.container p{
+    font-size: 3rem;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50, -50%);
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+h1{
+    color: white;
+    text-shadow: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.galeria{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 rgba(0, 0, 0, 0,0.19);
+    float: left;
+    width: 350px;
+}
+div.galeria img{
+    width: 100%;
+    height: auto;
+}
+div.galeria:hover{
+    border: 1px solid lightcoral;
+    transform: rotate(-3deg);
+}
+div.pie{
+    text-align: center;
+    text-shadow: 2px 2px 5px white;
+    padding: 10px;
+}
+.container-form{
+    width: 100px;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form i{
+    color: orange;
+    margin-right: 10px;
+}
+
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.container-form form textarea{
+    max-height:  530px;
+    min-width: 530px;
+    max-height: 140px;
+    max-width: 150px;
+}
+
+div.galeria2{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 rgba(0, 0, 0, 0,0.19);
+    float: left;
+    width: 350px;
+}
+div.galeria2 img{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+div.galeria:hover{
+    border: 1px solid lightcoral;
+    transform: rotate(-3deg);
+}
+div.pie2{
+    text-align: center;
+    text-shadow: 2px 2px 5px white;
+    padding: 10px;
+}
+div.foto{
+    background-color: transparent;
+}
+footer {
+    align-self: flex-end;
+    background-color: rgba(120, 120, 120, .5);
+    line-height: 3;
+    text-align: center;
+    width: 100%;
+    
+ }

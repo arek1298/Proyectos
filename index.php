@@ -1,87 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Regístro de usuarios</title>
-	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-	<link rel="stylesheet" href="sweetalert2.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
 	
-	<link rel="stylesheet" href="estilos.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
 	<script src="jquery-3.2.1.min.js"></script>
+    
+    <title>Document</title>
 </head>
 <body>
-	<br>
-	<div class="container">
-            <div id="login-row" class="row justify-content-center align-items-center">
-                <div id="login-column" class="col-md-6">
-                    <div id="login-box" class="col-md-12">
-	  <form id="frmajax" method="POST">
-	  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-	 
-		<label>Nombre</label>
-		<p></p>
-		<input type="text" name="nombre" id="nombre" class="form-control">
-		<p></p>
-		<label>apellido</label>
-		<p></p>
-		<input type="text" name="apellido" id="apellido" class="form-control">
-		<p></p>
-		<label>Usuario</label>
-		<p></p>
-		<input type="text" name="usuario" id="usuario" class="form-control">
-		<p></p>
-		<label>password</label>
-		<p></p>
-		<input type="password" name="password" id="password" class="form-control">
-		<p></p>
-		<button id="btnguardar" class="btn btn-primary">Guardar datos</button><br>
-		<br>
-		<a name="" id="" class="btn btn-primary" href="iniciar.php" role="button">Inicio</a>
-	</form>
-	
-	
-	  </div>
-	</div>
-	
+<nav>
+    <a href="iniciar.php" class="nav">Login</a>
+    <a href="registro.php" class="nav">Regístro</a>
+    <a href="#" class="nav">Nosotros</a>
+</nav>
+
+<section class="container">
+<img src="imagen/tienda-virtual.png" alt="foto">
+<p>La mejor tienda online</p>
+
+</section>
+
+<h1>Productos de calidad</h1>
+<div class="galeria">
+    <div class="foto">
+        <img src="fotos/audifonos.jpeg">
+    </div>
+    <div class="pie">
+        <p>Los mejores Audifonos</p>
+        <p>Al mejor precio</p>
+    </div>
+</div>
+<div class="galeria">
+    <div class="foto">
+        <img src="fotos/laptop.jpeg">
+    </div>
+    <div class="pie">
+        <p>Lo mejor en cómputo</p>
+        <p>Tareas y gamer</p>
+    </div>
+</div>
+<div class="galeria">
+    <div class="foto">
+        <img src="fotos/mouse.jpeg">
+    </div>
+    <div class="pie">
+        <p>¿Buscas celulares?</p>
+        <p>También tenemos de todas las marcas</p>
+    </div>
+</div>
+<br>
+
+<h1 style="text-align: center;"> Ofrecemos:</h1>
+<div class="galeria2">
+    <div class="foto">
+        <img src="imagen/credito.png">
+    </div>
+    <div class="pie2">
+        <p>Aceptamos cualquier tarjeta de crédito</p>
+        <p>Para que tu compra sea segura</p>
+    </div>
+</div>
+
+</div>
+<div class="galeria2">
+    <div class="foto">
+        <img src="imagen/envio2.png">
+    </div>
+    <div class="pie2">
+        <p>Envío gratis</p>
+        <p>A cualquier parte de la república méxicana</p>
+    </div>
+</div>
+<div class="galeria2">
+    <div class="foto">
+        <img src="imagen/dev4.png">
+    </div>
+    <div class="pie2">
+        <p>Devoluciones gratis</p>
+        <p>Te regresamos tu dinero al instante</p>
+    </div>
+</div>
+  
+<!--Footer-->
+
+
+
+
 </body>
+
 </html>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('#btnguardar').click(function(){
-			var datos=$('#frmajax').serialize();
-			$.ajax({
-				type:"POST",
-				url:"insertar.php",
-				data:datos,
-				success:function(r){
-					if(r==1){
-						//alert("agregado con exito");
-						Swal.fire({
-  position: 'center',
-  icon: 'success',
-  title: 'Regístrado con éxito',
-  showConfirmButton: false,
-  timer: 2000
- 
-})
-					}else{
-						//alert("Fallo el server");
-						Swal.fire({
-  position: 'top-end',
-  icon: 'error',
-  title: 'Intentar nuevamente',
-  showConfirmButton: false,
-  timer: 1500
-})
-					}
-				}
-			});
-
-			return false;
-		});
-	});
-</script>
-
