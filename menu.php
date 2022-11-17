@@ -39,6 +39,29 @@ $sql="SELECT *  FROM productos";
     
   </div>
 </nav>
+
+<!--alerta-->
+<div class="alert alert-danger position-absolute d-inline-flex p-2" role="alert">
+<p>La sesión expira en:&nbsp <div id="number" class="text"></div></p>
+</div>
+<script type="text/javascript">
+ n = 10
+ var l= document.getElementById("number");
+ var id = window.setInterval(function(){
+
+ 
+ document.onmousemove = function(){
+  n=10
+ };
+ l.innerText = n;
+ n--;
+ if(n<= -1){
+alert("Sesión expiró");
+location.href="cerrar.php";
+ }
+},1200);
+
+</script>
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">Hola: <?php echo $ark['nombre'];?></h1> 

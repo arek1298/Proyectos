@@ -40,6 +40,7 @@
       <td><?php echo $row['nombre']?></td>
       <td><?php echo $row['apellido']?></td>
       <td><?php echo $row['usuario']?></td>
+      <td> <a href="id=<?php echo $row['id']?>">Link</a></td>
       <td><a class="btn btn-danger" href="delete.php?id=<?php echo $row['id']?>">Eliminar</a></td>
      
      

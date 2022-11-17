@@ -20,19 +20,19 @@
 	  
 		<label>Nombre</label>
 		<p></p>
-		<input type="text" name="nombre" id="nombre" class="form-control">
+		<input type="text" name="nombre" id="nombre" class="form-control" required>
 		<p></p>
 		<label>apellido</label>
 		<p></p>
-		<input type="text" name="apellido" id="apellido" class="form-control">
+		<input type="text" name="apellido" id="apellido" class="form-control" required>
 		<p></p>
 		<label>Usuario</label>
 		<p></p>
-		<input type="text" name="usuario" id="usuario" class="form-control">
+		<input type="text" name="usuario" id="usuario" class="form-control" required>
 		<p></p>
 		<label>password</label>
 		<p></p>
-		<input type="password" name="password" id="password" class="form-control">
+		<input type="password" name="password" id="password" class="form-control" required>
 		<p></p>
 		<button id="btnguardar" class="btn btn-primary">Guardar datos</button><br>
 		<br>
