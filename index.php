@@ -17,7 +17,7 @@
 <nav>
     <a href="iniciar.php" class="nav">Login</a>
     <a href="registro.php" class="nav">Regístro</a>
-    <a href="#" class="nav">Nosotros</a>
+    <a href="ubicación.php" class="nav">Ubicación</a>
 </nav>
 
 <section class="container">
